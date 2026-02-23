@@ -1,0 +1,64 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+* {
+	scroll-behavior: smooth;
+}
+
+.dbc-blue {
+	background: #173d69;
+}
+
+.dbc-brown {
+	background: #603817;
+}
+
+.gray-one {
+	background-color: #414042;
+}
+
+.gray-one-border {
+	border: #414042;
+	border-width: 1px;
+}
+
+/* Enhanced glass morphism */
+.backdrop-blur-xl {
+	backdrop-filter: blur(16px);
+	-webkit-backdrop-filter: blur(16px);
+}
+
+/* Custom toggle styling for better visibility */
+.toggle-primary:checked {
+	background-color: rgba(255, 255, 255, 0.3);
+	border-color: rgba(255, 255, 255, 0.3);
+}
+
+.toggle-primary {
+	border-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Smooth transitions for interactive elements */
+button, input, select {
+	transition: all 0.2s ease-in-out;
+}
+
+/* Better scrollbar styling */
+::-webkit-scrollbar {
+	width: 8px;
+	height: 8px;
+}
+
+::-webkit-scrollbar-track {
+	background: rgba(255, 255, 255, 0.05);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(255, 255, 255, 0.3);
+}

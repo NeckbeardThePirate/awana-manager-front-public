@@ -1,0 +1,28 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "awana-manager-frontend",
+	"compatibility_date": "2025-12-21",
+	"main": "src/index.ts",
+	"assets": {
+		"not_found_handling": "single-page-application"
+	},
+	"observability": {
+		"enabled": false,
+		"head_sampling_rate": 1,
+		"logs": {
+			"enabled": true,
+			"head_sampling_rate": 1,
+			"persist": true,
+			"invocation_logs": true
+		},
+		"traces": {
+			"enabled": false,
+			"persist": true,
+			"head_sampling_rate": 1
+		}
+	},
+	"vars": {
+		"VITE_CLERK_PUBLISHABLE_KEY": "pk_test_Y2xhc3NpYy1tYW50aXMtMy5jbGVyay5hY2NvdW50cy5kZXYk",
+		"VITE_API_URL": "https://awana-mngr-api.judah-helland.workers.dev"
+	}
+}
